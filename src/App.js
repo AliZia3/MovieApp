@@ -41,7 +41,7 @@ const App = () => {
       </div>
 
       {movies?.length > 0 ? (
-        <div className="container">{React.Children.toArray(movies.map((movie) => <MovieCard movie={movie} />))}</div> // 'React.Children.toArray' to fix error (https://www.amitmerchant.com/auto-assigning-unique-key-to-each-child-of-list-in-react/)
+        <div className="container">{React.Children.toArray(movies.map((movie) => <MovieCard movie={movie} />))}</div> 
       ) : (
         <div className="empty"><h2>No movies found</h2></div>
       )}
